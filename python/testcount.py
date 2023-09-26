@@ -6,6 +6,12 @@ def count(s):
     result_object = {}
     
     # populate object based on string
+    for char in s:
+        keys = result_object.keys()
+        if char not in keys:
+            result_object[char] = 1
+        else:
+            result_object[char] += 1
         
     return result_object
 
