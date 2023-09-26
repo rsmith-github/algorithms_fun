@@ -87,3 +87,5 @@ result = calculator.calculate("299   255 %");
 console.log(result);
 result = calculator.calculate("     1      3 * 2 -");
 console.log(result);
+result = calculator.calculate("324   +    1 - 23 ");
+console.log(result);
