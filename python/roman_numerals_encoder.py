@@ -45,6 +45,7 @@ def solution(number):
         return roman_number
 
     elif number >= 50 and number < 100:
+        
         pass
     elif number >= 100 and number < 500:
         pass
@@ -81,7 +82,7 @@ class TestSolution(unittest.TestCase):
                          "solution(1989),'MCMLXXXIX'")
 
 
-# if __name__ == "__main__":
-#     unittest.main()
+if __name__ == "__main__":
+    unittest.main()
 
 solution(21)
