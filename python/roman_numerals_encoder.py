@@ -22,3 +22,6 @@ class TestSolution(unittest.TestCase):
                          "solution(1889),'MDCCCLXXXIX'")
         self.assertEqual(solution(1989), 'MCMLXXXIX',
                          "solution(1989),'MCMLXXXIX'")
+
+if __name__ == "__main__":
+    unittest.main()
