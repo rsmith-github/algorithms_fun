@@ -70,7 +70,7 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(solution(6), 'VI', "solution(6),'VI'")
         self.assertEqual(solution(14), 'XIV', "solution(14),'XIV")
         self.assertEqual(solution(21), 'XXI', "solution(21),'XXI'")
-        self.assertEqual(solution(31), 'XXXV', "solution(21),'XXI'")
+        self.assertEqual(solution(35), 'XXXV', "solution(21),'XXI'")
         self.assertEqual(solution(89), 'LXXXIX', "solution(89),'LXXXIX'")
         self.assertEqual(solution(91), 'XCI', "solution(91),'XCI'")
         self.assertEqual(solution(984), 'CMLXXXIV', "solution(984),'CMLXXXIV'")
