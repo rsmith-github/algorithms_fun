@@ -17,8 +17,24 @@ def solution(number):
     # roman number string to build
     roman_number = ""
     
+    # Separate by decimal
 
-    return
+    if number < 5:
+        pass
+    elif number >= 5 and number < 10:
+        pass
+    elif number >= 10 and number < 50:
+        pass
+    elif number >= 50 and number < 100:
+        pass
+    elif number >= 100 and number < 500:
+        pass
+    elif number >= 500 and number < 1000:
+        pass
+
+            return
+            
+    
 
 
 class TestSolution(unittest.TestCase):
