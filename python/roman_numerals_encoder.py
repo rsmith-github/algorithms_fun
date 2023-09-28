@@ -32,8 +32,8 @@ def solution(number):
     elif number >= 500 and number < 1000:
         pass
 
-            return
-            
+    
+    
     
 
 
