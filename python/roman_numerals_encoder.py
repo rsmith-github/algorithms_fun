@@ -1,8 +1,20 @@
 import unittest
 
 
-def solution(n):
-    # TODO convert int to roman string
+def solution(number):
+    
+    r_number_reference = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    
+    roman_number = ""
+
     return
 
 
@@ -22,6 +34,7 @@ class TestSolution(unittest.TestCase):
                          "solution(1889),'MDCCCLXXXIX'")
         self.assertEqual(solution(1989), 'MCMLXXXIX',
                          "solution(1989),'MCMLXXXIX'")
+
 
 if __name__ == "__main__":
     unittest.main()
