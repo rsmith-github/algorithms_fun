@@ -28,17 +28,17 @@ class TestCount(unittest.TestCase):
         self.programming = "programming bootcamp"
 
     def test_basic_case(self):
-        self.assertEquals({'a': 1, 'b': 1, 'c': 1}, count(self.input_1))
+        self.assertEqual({'a': 1, 'b': 1, 'c': 1}, count(self.input_1))
 
     def test_doubles(self):
-        self.assertEquals({'a': 2, 'b': 2, 'c': 2}, count(self.input_2))
+        self.assertEqual({'a': 2, 'b': 2, 'c': 2}, count(self.input_2))
 
     def test_doubles_and_one_single(self):
-        self.assertEquals({'a': 2, 'b': 2, 'c': 1}, count("aabbc"))
+        self.assertEqual({'a': 2, 'b': 2, 'c': 1}, count("aabbc"))
 
     def test_random_words_and_sentences(self):
-        self.assertEquals({'c': 1, 'a': 3, 'n': 1, 'd': 1}, count(self.canada))
-        self.assertEquals({'p': 2, 'r': 2, 'o': 3, 'g': 2, 'a': 2, 'm': 3,
+        self.assertEqual({'c': 1, 'a': 3, 'n': 1, 'd': 1}, count(self.canada))
+        self.assertEqual({'p': 2, 'r': 2, 'o': 3, 'g': 2, 'a': 2, 'm': 3,
                           'i': 1, 'n': 1, 'b': 1, 't': 1, 'c': 1}, count(self.programming))
 
     def test_empty(self):
