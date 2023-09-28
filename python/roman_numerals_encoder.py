@@ -2,18 +2,21 @@ import unittest
 
 
 def solution(number):
-    
+
+    # reference roman numbers
     r_number_reference = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
+        1: 'I',
+        5: 'V',
+        10: 'X',
+        50: 'L',
+        100: 'C',
+        500: 'D',
+        100: 'M',
     }
-    
+
+    # roman number string to build
     roman_number = ""
+    
 
     return
 
