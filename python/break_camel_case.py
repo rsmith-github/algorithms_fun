@@ -2,16 +2,7 @@ import unittest
 
 def solution(string):
     
-    result = ''
-    
-    for ch in string:
-        if ch.isupper():
-            result += " " + ch
-            continue
-
-        result += ch
-    
-    return result
+    return ''.join(' ' + ch if ch.isupper() else ch for ch in string)
 
 class TestSolution(unittest.TestCase):
     
