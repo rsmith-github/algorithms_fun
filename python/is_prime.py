@@ -3,7 +3,13 @@ import unittest
 
 def is_prime(number):
     
-    return False
+    if number == 0 or number == 1 or number < 0:
+        return False
+    
+    for i in range(2, int(number / 2)):
+        if number%i == 0:
+            return False
+    return True
     
 
 
@@ -16,3 +22,6 @@ class TestIsPrime(unittest.TestCase):
         self.assertEqual(is_prime(73), True, "73 is prime")
         self.assertEqual(is_prime(75), False, "75 is not prime")
         self.assertEqual(is_prime(-1), False, "-1 is not prime")
+        
+if __name__ == "__main__":
+    unittest.main()
