@@ -2,7 +2,7 @@ import unittest
 
 def likes(list):
     
-    return
+    return ''.join(list,'and')
 
 class TestLikes(unittest.TestCase):
 
