@@ -1,6 +1,8 @@
 import unittest
 
-
+def likes(list):
+    
+    return
 
 class TestLikes(unittest.TestCase):
 
