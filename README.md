@@ -9,7 +9,7 @@ Python: A collection of Python scripts, each solving a unique problem. Every Pyt
 TypeScript: Explore solutions implemented in TypeScript, bringing strong typing and modern JavaScript features to the algorithmic challenges.
 
 ## Getting Started
-Python
+### Python
 To run any Python script, simply navigate to the python directory and execute the script using a Python interpreter:
 ```
 python3 <script_name>.py
@@ -17,7 +17,7 @@ python3 <script_name>.py
 
 Each script includes unittests to validate the solution, ensuring correctness and performance.
 
-TypeScript
+### TypeScript
 For TypeScript, navigate to the typescript directory, and particularly into the subdirectories for specific solutions. Use the TypeScript compiler to compile the .ts files, and then execute them with Node.js.
 
 Contribute
