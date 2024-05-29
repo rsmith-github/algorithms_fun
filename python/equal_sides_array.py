@@ -3,6 +3,14 @@ import unittest
 
 def find_even_index(arr):
 
+    for i, _ in enumerate(arr):
+
+        left_side = arr[:i]
+        right_side = arr[i+1:]
+
+        if sum(left_side) == sum(right_side):
+            return i
+
     return -1
 
 
