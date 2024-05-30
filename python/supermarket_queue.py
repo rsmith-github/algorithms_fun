@@ -4,13 +4,13 @@ import heapq
 
 def queue_time(customers, n):
 
-    heap = [0] * n
-
-    for time in customers:
-        heapq.heapreplace(heap, heap[0] + time)
-        print(heap)
-
-    return max(heap)
+    tills = [0] * n
+    
+    for i in customers:
+        tills[0] += i
+        tills.sort()
+        
+    return max(tills)
 
 
 class TestQueue(unittest.TestCase):
