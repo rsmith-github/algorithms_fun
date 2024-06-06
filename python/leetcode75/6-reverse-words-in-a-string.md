@@ -8,10 +8,8 @@
 
 def reverseWords(string: str) -> str:
     
-    string_split = string.split()
-    string_split.reverse()
-    
-    return ' '.join(string_split)
+
+    return ' '.join(reversed(string.split()))
 
 ```
 
