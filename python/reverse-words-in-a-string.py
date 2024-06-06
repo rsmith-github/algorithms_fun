@@ -3,7 +3,10 @@ import unittest
 
 def reverseWords(string: str) -> str:
     
-    pass
+    string_split = string.split()
+    string_split.reverse()
+    
+    return " ".join(string_split)
 
 class TestReverseWords(unittest.TestCase):
 
