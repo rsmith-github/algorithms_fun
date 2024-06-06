@@ -59,3 +59,9 @@ func gcd(a, b int) int {
 }
 
 ```
+
+# Time Complexity
+
+Dominating term is the string concatenation and comparison
+
+- Linear time O(m + n)
