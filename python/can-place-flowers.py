@@ -3,7 +3,6 @@ import unittest
 
 def can_place_flowers(flowerbed, n):
     
-    
     for i in range(len(flowerbed)):
         # last element
         if i == len(flowerbed) - 1 and flowerbed[i] == 0 and flowerbed[i-1] == 0:
