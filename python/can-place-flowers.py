@@ -29,7 +29,21 @@ class TestCanPlaceFlowers(unittest.TestCase):
         self.assertEqual(can_place_flowers([0,0,1,0,1,0,0,1,0,1], 1), True)
         self.assertEqual(can_place_flowers([0,0,1,0,1,0,0,1,0,1], 2), False)
         self.assertEqual(can_place_flowers([0,0,1,0,1,0,0,1,0,1], 3), False)
-        
+        self.assertEqual(can_place_flowers([0,0,0,0,0], 2), True)  # All empty, can place 2 flowers
+        self.assertEqual(can_place_flowers([1,0,0,0,0,0,1], 2), True)  # Multiple empty slots at the end
+        self.assertEqual(can_place_flowers([1,0,0,0,1,0,0], 1), True)  # Single place at the end
+        self.assertEqual(can_place_flowers([0,0,0,0,1,0,0,0,0], 3), True)  # Can place 3 flowers in between
+        self.assertEqual(can_place_flowers([1,0,0,0,0,1,0,0], 1), True)  # Place one in the middle
+        self.assertEqual(can_place_flowers([1,0,0,0,0,1,0,0], 2), True)  # Can't place two in the middle
+        self.assertEqual(can_place_flowers([1,0,0,0,0,1,0,0], 3), False)  # Can't place two in the middle
+        self.assertEqual(can_place_flowers([0], 1), True)  # Single slot empty
+        self.assertEqual(can_place_flowers([1], 1), False)  # Single slot occupied
+        self.assertEqual(can_place_flowers([0,0,0], 2), True)  # Three slots, can place 2 flowers
+        self.assertEqual(can_place_flowers([0,0,0], 1), True)  # Three slots, can place 1 flowers
+        self.assertEqual(can_place_flowers([0,0,0], 3), False)  # Three slots, cannot place 3 flowers
+        self.assertEqual(can_place_flowers([0,0,1,0,0,0], 2), True)  # Place two flowers in mixed slots
+        self.assertEqual(can_place_flowers([0,0,0,0,0,0,0,0], 4), True)  # Place four flowers in long empty array
+        self.assertEqual(can_place_flowers([1,0,0,0,0,0,0,0,1], 3), True)  # Long array with ends occupied
         
 
 
