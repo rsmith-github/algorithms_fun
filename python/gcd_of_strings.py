@@ -2,14 +2,17 @@ import unittest
 
 
 def gcdOfStrings(str1, str2):
-    
-    if len(str1) < len(str2):
-        return gcdOfStrings(str2, str1)
-    if str1 == str2:
-        return str1
-    if str1.startswith(str2):
-        return gcdOfStrings(str1[len(str2):], str2)
+    if str1 + str2 == str2 + str1:
+        greatestCommonStrLen = gcd(len(str1), len(str2))
+        return str1[:greatestCommonStrLen]
     return ""
+
+def gcd(a, b):
+    
+    while b:
+        a, b = b, a % b
+        
+    return a
 
 class TestGcdOfStrings(unittest.TestCase):
 
