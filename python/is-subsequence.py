@@ -3,21 +3,19 @@ import unittest
 
 def isSubsequence(s, t):
     
-    current_char = s[0]
+    if s == "":
+        return True
     
-    count = 0 
-    
-    for char in t:
-        
-        if current_char == char:
+    slow = 0     
+    for fast in range(len(t)):
+
+        if s[slow] == t[fast]:
+            slow += 1
             
-            if count == len(s) - 1:
-                return True
-            
-            count += 1
-            current_char = s[count]
+        if slow == len(s):
+            return True
     
-    return count == len(s)
+    return False
     
     
 
@@ -30,6 +28,8 @@ class TestIsSubsequence(unittest.TestCase):
         self.assertEqual(isSubsequence("ace", "abcde"), True)
         self.assertEqual(isSubsequence("axc", "ahbgdc"), False)
         self.assertEqual(isSubsequence("", "ahbgdc"), True)
+        self.assertEqual(isSubsequence("a", "b"), False)
+        
         
 
 if __name__ == "__main__":
