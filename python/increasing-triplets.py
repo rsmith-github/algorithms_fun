@@ -1,9 +1,20 @@
-from ipaddress import ip_address
 import unittest
 
 
 def increasingTriplet(nums):
-    pass
+    n1 = float('inf')
+    n2 = float('inf')
+    
+    for n in nums:
+        if n <= n1:
+            n1 = n
+        elif n <= n2:
+            n2 = n
+        else:
+            return True
+    
+    return False
+
 
 class TestIncreasingTriplets(unittest.TestCase):
 
