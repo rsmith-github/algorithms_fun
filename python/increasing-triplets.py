@@ -22,6 +22,7 @@ class TestIncreasingTriplets(unittest.TestCase):
         self.assertEqual(increasingTriplet([1,2,3,4,5]), True)
         self.assertEqual(increasingTriplet([5,4,3,2,1]), False)
         self.assertEqual(increasingTriplet([2,1,5,0,4,6]), True)
+        self.assertEqual(increasingTriplet([5,9,3,1,4]), False)
 
 if __name__ == "__main__":
     unittest.main()
