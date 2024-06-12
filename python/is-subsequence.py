@@ -29,6 +29,7 @@ class TestIsSubsequence(unittest.TestCase):
         self.assertEqual(isSubsequence("abc", "ahbgdc"), True)
         self.assertEqual(isSubsequence("ace", "abcde"), True)
         self.assertEqual(isSubsequence("axc", "ahbgdc"), False)
+        self.assertEqual(isSubsequence("", "ahbgdc"), True)
         
 
 if __name__ == "__main__":
