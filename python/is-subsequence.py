@@ -3,7 +3,23 @@ import unittest
 
 def isSubsequence(s, t):
     
-    pass
+    current_char = s[0]
+    
+    count = 0 
+    
+    for char in t:
+        
+        if current_char == char:
+            
+            if count == len(s) - 1:
+                return True
+            
+            count += 1
+            current_char = s[count]
+    
+    return count == len(s)
+    
+    
 
 class TestIsSubsequence(unittest.TestCase):
     
