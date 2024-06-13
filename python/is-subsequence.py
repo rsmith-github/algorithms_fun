@@ -3,6 +3,8 @@ import unittest
 
 def isSubsequence(s, t):
     
+    if len(s) > len(t):
+        return False
     if s == "":
         return True
     
