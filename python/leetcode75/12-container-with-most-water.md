@@ -1,11 +1,11 @@
 # Solution
 
-- two pointer
-- sort the list
-- if sum eq k, increment ops variable, move both pointers
-- if less, move left pointer
-- if more, move right pointer
+- keep track of current max area
+- two pointer while loop
+- if left bar is lower or equal to right bar, calculate area and move left pointer
+- if right bar is lower or equal to left bar, calculate area and move right pointer
+- update max area
 
 # Time / Space complexity
-- Log-Linear O(n log n) because of sort function
+- Linear O(n)
 - O(1)
